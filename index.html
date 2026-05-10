@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>正在跳转...</title>
-    <!-- 自动跳转代码：3秒后跳转到你的IP链接 -->
-    <meta http-equiv="refresh" content="3; url=http://8.137.193.85/reg/#/pages/cmd/cmd?id=DG0011">
+    <title>正在进入注册页面...</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; text-align: center; padding: 40px 20px; background: #fff; }
-        h1 { font-size: 26px; color: #333; margin-bottom: 40px; }
-        .step { margin: 30px 0; font-size: 20px; color: #555; }
-        .tip { color: red; font-weight: bold; }
-        .link-box { margin-top: 50px; padding: 20px; background: #f5f5f5; border-radius: 8px; word-break: break-all; font-size: 14px; color: #666; }
+        h1 { font-size: 24px; color: #333; margin-bottom: 30px; }
+        .tip { font-size: 18px; color: #555; margin: 20px 0; }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
-    <h1>正在自动跳转中...</h1>
-    <div class="step">
-        <p>若3秒后未自动跳转，请点击右上角「…」→ 选择「在浏览器中打开」</p>
-    </div>
-    <div class="link-box">
-        目标链接：http://8.137.193.85/reg/#/pages/cmd/cmd?id=DG0011
-    </div>
+    <h1>注册页面即将打开</h1>
+    <p class="tip">请稍候，页面正在跳转...</p>
+    <p class="tip">如果3秒后没有自动跳转，请点击下方按钮：</p>
+
+    <!-- 手动跳转按钮，点一下直接跳IP链接 -->
+    <a href="http://8.137.193.85/reg/#/pages/cmd/cmd?id=DG0011" class="btn">点击进入注册页面</a>
+
+    <!-- JS自动跳转，浏览器打开后3秒自动触发 -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "http://8.137.193.85/reg/#/pages/cmd/cmd?id=DG0011";
+        }, 3000);
+    </script>
 </body>
 </html>
